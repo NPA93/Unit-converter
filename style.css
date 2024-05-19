@@ -5,7 +5,123 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+input[type=number]::-webkit-inner-spin-button,  input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+
 body {
     background-color: rgb(29, 29, 29);
-    
 }
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 550px;
+    height: 729px;
+    background-color: rgb(205, 96, 103);
+}   
+
+.up-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    width: 550px;
+    height: 285px;    
+    color: #ffffff;
+    background-color:#6943ff;
+}
+
+.converter {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+#input-value {
+    text-align: center;
+    width: 117px;
+    height: 83px;
+
+    background-color: rgb(105, 67, 255, 0);
+    border-radius: 5px;
+    border: 2px solid #B295FF;
+
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: 800;
+}
+
+#convert-button {
+    width: 117px;
+    height: 42px;
+    padding: 9px 27.5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #ffffff;
+    color: #3D3D3D;
+    font-size: 16px;
+    font-weight: 500;    
+    box-shadow: 0px 1px 2px 0px #0000000D;
+}
+
+.down-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 550px;
+    height: 444px;
+    background-color: #F4F4F4;
+}
+
+.results {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+}
+
+.result-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 9px;
+    background-color: rgb(105, 67, 255, 0);
+
+    width: 500px;
+    height: 108.57px;
+    border-radius: 4.68px;
+    background-color: #FFFFFF;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #5A537B;
+}
+
+p {
+font-size: 14px;
+font-weight: 400;
+color: #353535;
+}
+
