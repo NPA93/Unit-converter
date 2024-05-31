@@ -15,28 +15,16 @@ let massEl = document.getElementById("mass-result");
 
 // convertir el valor introducido en el input de metros a pies, y de pies a metros  (1 pie = 0.3048 metros)  (1 metro = 3.28084 pies)
 
-function meterToFeet(meter) {
-  return meter * 3.281;
-}
-function feetToMeter(feet) {
-  return feet * 0.305;
-}
+const meterToFeet = (meter) => { return meter * 3.281;}
+const feetToMeter = (feet) => { return feet * 0.305;}
 
-function literToGallon(liter) {
-  return liter * 0.264;
-}
-function gallonToLiter(gallon) {
-  return gallon * 3.787;
-}
+const literToGallon = (liter) => { return liter * 0.264;}
+const gallonToLiter = (gallon) => { return gallon * 3.787;}
 
-function kilogramToPound(kilogram) {
-  return kilogram * 2.205;
-}
-function poundToKilogram(pound) {
-  return pound * 0.454;
-}
+const kilogramToPound = (kilogram) => { return kilogram * 2.205;}
+const poundToKilogram = (pound) => { return pound * 0.454;}
 
-buttonEl.addEventListener("click", function () {
+buttonEl.addEventListener("click", ()  => {
   let inputValue = inputEl.value;
   let meterResult = meterToFeet(inputValue);
   let feetResult = feetToMeter(inputValue);
